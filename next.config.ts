@@ -1,19 +1,16 @@
 import type { NextConfig } from 'next';
 
-const isProd = process.env.NODE_ENV === 'production';
-const repoName = "HummerBoxAndratx"; // Nombre EXACTO de tu repositorio en GitHub
+// const repoName = "hummer-box-andratx"; // Nombre exacto de tu repositorio en GitHub
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   output: 'export',
   images: {
-    unoptimized: true, // Necesario para que GitHub Pages maneje imágenes sin optimización de Next.js
+    unoptimized: true, // Evita problemas con imágenes en modo estático
   },
-  basePath: isProd ? `/${repoName}` : '',
-  assetPrefix: isProd ? `/${repoName}/` : '',
-  env: {
-    NEXT_PUBLIC_BASE_PATH: isProd ? `/${repoName}` : '',
-  },
+  // basePath: "/", // Se usa SOLO en producción
+  // assetPrefix: "/"
+  
 };
 
 export default nextConfig;
