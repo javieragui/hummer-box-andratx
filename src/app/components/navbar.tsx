@@ -28,7 +28,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center">
             <Image
               aria-hidden
-              src="/Logo.jpg"
+              src="Logo.jpg"
               alt="Hummer Box Andratx"
               width={80}
               height={80}
