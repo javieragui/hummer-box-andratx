@@ -1,0 +1,17 @@
+.navLink {
+    color: #1f2937; /* text-gray-800 */
+    font-weight: 500;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  
+  .navLink:hover {
+    color: #3b82f6; /* hover:text-blue-500 */
+  }
+  
+  .navLink:focus {
+    color: #3b82f6; /* focus:text-blue-500 */
+    background-color: #dbeafe; /* focus:bg-blue-100 */
+  }
