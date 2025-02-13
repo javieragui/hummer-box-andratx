@@ -44,7 +44,7 @@ export default function Navbar() {
         <Link href="/" className="absolute left-36 top-1 z-[9999]">
           <div className="relative h-[85px] w-[85px] lg:h-[110px] lg:w-[110px]">
             <Image
-              src="/Logo.jpg"
+              src="Logo.jpg"
               alt="Hummer Box Andratx"
               fill
               className="rounded-full border-[2px] border-blue-500 shadow-lg bg-white"
