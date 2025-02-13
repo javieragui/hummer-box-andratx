@@ -10,31 +10,18 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white border-b-4 border-blue-500 shadow-md fixed top-0 w-full z-50">
-      <div className="container mx-auto px-4 py-2 flex items-center relative">
+      <div className="container mx-auto px-4 py-2 flex items-center justify-between relative">
         
-        {/* LOGO + TEXTO */}
-        <div className="flex items-center space-x-4 flex-grow">
-          {/* TEXTO HUMMER BOX ANDRATX */}
-          <div className="hidden lg:flex flex-col font-bold text-lg">
-            <span className="whitespace-nowrap">
+        {/* CONTENEDOR DEL TEXTO */}
+        <div className="flex items-center space-x-4">
+          <div className="block text-left font-bold text-lg">
+            <span className="block">
               HU<span className="text-blue-500">MM</span>ER BOX
             </span>
-            <span className="text-gray-600 tracking-wide text-center text-sm">
+            <span className="block text-gray-600 text-sm">
               ANDRATX
             </span>
           </div>
-
-          {/* LOGO */}
-          <Link href="/" className="flex items-center">
-            <Image
-              aria-hidden
-              src="Logo.jpg"
-              alt="Hummer Box Andratx"
-              width={80}
-              height={80}
-              className="h-16 w-16 object-contain rounded-full border-2 border-blue-500 shadow-lg"
-            />
-          </Link>
         </div>
 
         {/* MENÚ PRINCIPAL */}
@@ -52,6 +39,19 @@ export default function Navbar() {
             Contacto
           </Link>
         </div>
+
+        {/* LOGO A LA DERECHA SUPERPUESTO SOBRE LA LÍNEA */}
+        <Link href="/" className="absolute left-36 top-1 z-[9999]">
+          <div className="relative h-[85px] w-[85px] lg:h-[110px] lg:w-[110px]">
+            <Image
+              src="/Logo.jpg"
+              alt="Hummer Box Andratx"
+              fill
+              className="rounded-full border-[2px] border-blue-500 shadow-lg bg-white"
+              style={{ objectFit: "contain" }}
+            />
+          </div>
+        </Link>
 
         {/* BOTÓN MENÚ MÓVIL */}
         <button
