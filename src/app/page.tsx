@@ -16,8 +16,10 @@ export default function HomePage() {
         {/* <div className="absolute inset-0 bg-black/40"></div> */}
 
          {/* Cuadro de fondo para el texto */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-black/60 rounded-lg px-6 py-4">
-          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-center">
+        {/* Cuadro de fondo para el texto */}
+        <div className="absolute bottom-16 sm:bottom-20 left-1/2 transform -translate-x-1/2 
+                        bg-black/70 rounded-lg px-4 sm:px-6 py-3 sm:py-4 w-[50%] sm:w-auto">
+          <h1 className="text-white text-xl sm:text-3xl md:text-4xl font-bold leading-tight text-center">
             HU<span className="text-blue-500">MM</span>ER BOX
             <span className="block">ANDRATX</span>
           </h1>

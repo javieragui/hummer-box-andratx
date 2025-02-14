@@ -5,7 +5,7 @@ export default function UnetePage() {
     <div className="text-center mt-20">
       
       {/* Imagen principal con botón */}
-      <div className="relative w-full aspect-[2.5/1] mx-auto">
+      <div className="relative w-full aspect-[2.5/1] min-h-[300px] sm:min-h-[400px] md:min-h-[500px] mx-auto">
         <Image
           src="Halloween_Grupo.jpg"
           alt="Unete a Hummer Box Andratx"
@@ -14,24 +14,26 @@ export default function UnetePage() {
         />
         {/* Capa oscura encima de la imagen */}
         <div className="absolute inset-0 bg-black/40"></div>
-         {/* Cuadro de fondo para el texto */}
-         <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 bg-black/60 rounded-lg px-6 py-4">
-          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-center">
+
+        {/* Cuadro de fondo para el texto */}
+        <div className="absolute bottom-16 sm:bottom-20 left-1/2 transform -translate-x-1/2 
+                        bg-black/70 rounded-lg px-4 sm:px-6 py-3 sm:py-4 w-[50%] sm:w-auto">
+          <h1 className="text-white text-xl sm:text-3xl md:text-4xl font-bold leading-tight text-center">
             HU<span className="text-blue-500">MM</span>ER BOX
             <span className="block">ANDRATX</span>
           </h1>
         </div>
 
         {/* Botón dentro de la imagen */}
-        <button className="btn-primary absolute bottom-4 md:bottom-6 
-            left-1/2 transform -translate-x-1/2 rounded-md text-xs md:text-sm px-6 py-3 bg-blue-500 text-white font-bold hover:bg-blue-700 transition">
+        <button className="absolute bottom-4 md:bottom-6 left-1/2 transform -translate-x-1/2 
+            rounded-md text-xs sm:text-sm px-6 py-3 bg-blue-500 text-white font-bold hover:bg-blue-700 transition">
           ¡Únete!
         </button>
       </div>
 
       {/* Sección "Donde Encontrarnos" */}
       <div className="mt-12 px-6 lg:px-20">
-        <h1 className="text-3xl font-bold text-center mb-6">Donde Encontrarnos</h1>
+        <h1 className="text-3xl font-bold text-center mb-6">Dónde Encontrarnos</h1>
 
         {/* Contenedor con texto a la izquierda y mapa a la derecha */}
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8">
@@ -39,7 +41,7 @@ export default function UnetePage() {
           {/* Texto a la izquierda */}
           <div className="lg:w-1/2 text-left text-lg leading-relaxed pt-4">
             <p>
-              <span className="font-bold underline">Dirección</span> 
+              <span className="font-bold underline">Dirección:</span> 
             </p>
             <p className="ml-6">Calle Travessia sa Tanqueta 17, 07150, Andratx, Islas Baleares</p>
             <h5><span className="font-bold underline pt-2">Contacto</span></h5>
@@ -51,7 +53,7 @@ export default function UnetePage() {
             </ul>
             <h5><span className="font-bold underline pt-2">Horarios</span></h5>
             <ul className="list-disc list-inside space-y-2 text-left pt-2">
-              <li><span className="font-bold ">Luneas a Viernes:</span> De 6:45 a 20:30</li>
+              <li><span className="font-bold ">Lunes a Viernes:</span> De 6:45 a 20:30</li>
               <li><span className="font-bold ">Sábados:</span> De 9:30 a 11:30</li>
             </ul>
           </div>
