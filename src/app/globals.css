@@ -11,17 +11,32 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary: #1d7abf;
   }
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: "#F8F9FA";
+  /* background: var(--background); */
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* .nav-link {
-  @apply text-gray-800 font-medium transition duration-200 
-         hover:text-blue-500 focus:text-blue-500 
-         focus:bg-blue-100 px-3 py-2 rounded-lg;
-} */
+.btn-primary {
+  color: #ffffff; /* text-gray-800 */
+  font-weight: 500;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  padding: 6px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  background: #1d7abf;
+}
+
+.btn-primary:hover {
+  color: black; /* hover:text-blue-500 */
+}
+
+.btn-primary:focus {
+  color: #3b82f6; /* focus:text-blue-500 */
+  background-color: #dbeafe; /* focus:bg-blue-100 */
+}
