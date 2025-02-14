@@ -29,16 +29,16 @@ export default function Navbar() {
           {/* MENÚ PRINCIPAL */}
           <div className="hidden lg:flex space-x-6">
             <Link href="/" className={styles.navLink}>
-              Box
+              BOX
             </Link>
-            <Link href="/entrenamientos" className={styles.navLink}>
-              Entrenamientos
+            <Link href="/" className={styles.navLink}>
+              ENTRENAMIENTOS
             </Link>
             <Link href="/Horarios" className={styles.navLink}>
-              Sobre Nosotros
+              SOBRE NOSOTROS
             </Link>
             <Link href="/unete" className={styles.navLink}>
-              Únete
+              ÚNETE
             </Link>
           </div>
 
@@ -67,16 +67,16 @@ export default function Navbar() {
           {isOpen && (
             <div className="absolute top-full left-0 w-full bg-black shadow-md flex flex-col items-center py-4 space-y-4">
               <Link href="/" className={styles.navLink} onClick={() => setIsOpen(false)}>
-                Inicio
+                BOX
               </Link>
-              <Link href="/about" className={styles.navLink} onClick={() => setIsOpen(false)}>
-                Sobre Nosotros
+              <Link href="/" className={styles.navLink} onClick={() => setIsOpen(false)}>
+                ENTRENAMIENTOS
               </Link>
-              <Link href="/services" className={styles.navLink} onClick={() => setIsOpen(false)}>
-                Servicios
+              <Link href="/Horarios" className={styles.navLink} onClick={() => setIsOpen(false)}>
+                SOBRE NOSOTROS
               </Link>
               <Link href="/unete" className={styles.navLink} onClick={() => setIsOpen(false)}>
-                Únete
+                ÚNETE
               </Link>
             </div>
           )}
