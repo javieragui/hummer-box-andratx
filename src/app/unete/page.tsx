@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function UnetePage() {
   return (
-    <div className="p-8 text-center mt-20">
+    <div className="text-center mt-20">
       
       {/* Contenedor con posición relativa */}
-      <div className="relative w-full max-w-[1000px] aspect-[2.5/1] mx-auto">
+      <div className="relative w-full aspect-[2.5/1] mx-auto">
         <Image
             src="Halloween_Grupo.jpg"
             alt="Unete a Hummer Box Andratx"
