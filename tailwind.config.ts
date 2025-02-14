@@ -17,6 +17,9 @@ export default {
         accent: "#00A3FF",
         gray: "#B0B0B0",
       },
+      fontFamily: {
+        miFuente: ["primary-font", "sans-serif"],
+      },
     },
   },
   plugins: [],
