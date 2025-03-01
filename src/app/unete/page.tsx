@@ -7,7 +7,7 @@ export default function UnetePage() {
       {/* Imagen principal con botón */}
       <div className="relative w-full aspect-[2.5/1] min-h-[300px] sm:min-h-[400px] md:min-h-[500px] mx-auto">
         <Image
-          src="Halloween_Grupo.jpg"
+          src="imgs/Halloween_Grupo.jpg"
           alt="Unete a Hummer Box Andratx"
           fill
           className="border-[0.5px] border-black-500 shadow-lg bg-white object-cover"

@@ -2,24 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
     --primary: #1d7abf;
   }
 }
 
 body {
-  color: var(--foreground);
   background: "#F8F9FA";
   /* background: var(--background); */
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .btn-primary {
@@ -41,6 +32,10 @@ body {
   background-color: #dbeafe; /* focus:bg-blue-100 */
 }
 
-h1, h2, h3 {
+/* h1, h2, h3 {
   font-family: var(--font-inter), sans-serif;
+} */
+
+.animate-spin-slow {
+  animation: spin-slow 100s linear infinite; /* Ajusta la velocidad */
 }

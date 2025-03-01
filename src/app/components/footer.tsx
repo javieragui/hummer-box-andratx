@@ -10,7 +10,7 @@ export default function FooterPage() {
         {/* LOGO */}
         <div className="flex flex-col items-center md:items-start">
           <Image
-            src="Logo.jpg"
+            src="imgs/Logo.jpg"
             alt="Hummer Box Mallorca"
             width={200}
             height={150}

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FaDumbbell } from "react-icons/fa";
 
 export default function HomePage() {
   return (
@@ -6,7 +7,7 @@ export default function HomePage() {
       <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px]">
         {/* Imagen Principal */}
         <Image
-          src="Gym_Hummer_Entrada.jpg"
+          src="imgs/Gym_Hummer_Entrada.jpg"
           alt="Entrada al Hummer Box Andratx"
           fill
           className="border-[0.5px] border-black-500 shadow-lg bg-white object-cover"
@@ -24,6 +25,14 @@ export default function HomePage() {
             <span className="block">ANDRATX</span>
           </h1>
         </div>
+      </div>
+      {/* Después del navbar */}
+      <div className="flex flex-col items-center justify-center mt-8">
+        <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-center">
+          Box de Cross Training en Mallorca
+        </h1>
+        <h5 className="text-xl sm:text-1xl md:text-2xls text-center">(entrenamiento funcional y preparación física)</h5>
+        <FaDumbbell color="#1d7abf" size={30} className="mt-2" />
       </div>
     </div>
   );
