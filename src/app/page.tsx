@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FaDumbbell } from "react-icons/fa";
+import { CarouselBox } from "@/app/components/carouselBox";
 
 export default function HomePage() {
   return (
@@ -13,10 +14,6 @@ export default function HomePage() {
           className="border-[0.5px] border-black-500 shadow-lg bg-white object-cover"
         />
 
-        {/* Capa oscura encima de la imagen */}
-        {/* <div className="absolute inset-0 bg-black/40"></div> */}
-
-         {/* Cuadro de fondo para el texto */}
         {/* Cuadro de fondo para el texto */}
         <div className="absolute bottom-16 sm:bottom-20 left-1/2 transform -translate-x-1/2 
                         bg-black/70 rounded-lg px-4 sm:px-6 py-3 sm:py-4 w-[50%] sm:w-auto">
@@ -26,13 +23,21 @@ export default function HomePage() {
           </h1>
         </div>
       </div>
-      {/* Después del navbar */}
+
+      {/* Sección después de la imagen */}
       <div className="flex flex-col items-center justify-center mt-8">
         <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-center">
           Box de Cross Training en Mallorca
         </h1>
-        <h5 className="text-xl sm:text-1xl md:text-2xls text-center">(entrenamiento funcional y preparación física)</h5>
+        <h5 className="text-xl sm:text-1xl md:text-2xls text-center">
+          (entrenamiento funcional y preparación física)
+        </h5>
         <FaDumbbell color="#1d7abf" size={30} className="mt-2" />
+      </div>
+
+      {/* Carrusel */}
+      <div className="flex flex-col items-center justify-center mt-8 bg-gray-100">
+        <CarouselBox />
       </div>
     </div>
   );
