@@ -15,13 +15,13 @@ export default function HomePage() {
         />
 
         {/* Cuadro de fondo para el texto */}
-        <div className="absolute bottom-16 sm:bottom-20 left-1/2 transform -translate-x-1/2 
+        {/* <div className="absolute bottom-16 sm:bottom-20 left-1/2 transform -translate-x-1/2 
                         bg-black/70 rounded-lg px-4 sm:px-6 py-3 sm:py-4 w-[50%] sm:w-auto">
           <h1 className="text-white text-xl sm:text-3xl md:text-4xl font-bold leading-tight text-center">
             HU<span className="text-blue-500">MM</span>ER BOX
             <span className="block">ANDRATX</span>
           </h1>
-        </div>
+        </div> */}
       </div>
 
       {/* Sección después de la imagen */}
@@ -36,7 +36,7 @@ export default function HomePage() {
       </div>
 
       {/* Carrusel */}
-      <div className="flex flex-col items-center justify-center mt-8 bg-gray-100">
+      <div className="flex flex-col items-center justify-center mt-8 mb-8">
         <CarouselBox />
       </div>
     </div>
