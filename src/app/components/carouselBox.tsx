@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { useState, useEffect, useRef } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 
@@ -20,19 +21,23 @@ const imagesCarousel = [
 ];
 
 export function CarouselBox() {
-  const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
-  );
+  const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => setIsMobile(window.innerWidth < 640);
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
 
   return (
     <Carousel
-  plugins={[plugin.current]}
-  // options={{ loop: true }} 
-  className="w-full max-w-7xl"
-  onMouseEnter={plugin.current.stop}
-  onMouseLeave={plugin.current.reset}
->
-
+      plugins={[plugin.current]}
+      className="w-full max-w-7xl"
+      onMouseEnter={plugin.current.stop}
+      onMouseLeave={plugin.current.reset}
+    >
       <CarouselContent>
         {imagesCarousel.map((item, index) => (
           <CarouselItem key={index}>
@@ -61,8 +66,14 @@ export function CarouselBox() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      
+      {/* Ocultar botones en móviles */}
+      {!isMobile && (
+        <>
+          <CarouselPrevious />
+          <CarouselNext />
+        </>
+      )}
     </Carousel>
   );
 }
