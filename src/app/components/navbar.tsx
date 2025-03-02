@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
+import { motion } from "framer-motion";
 import Link from "next/link";
-import { Menu, X } from "lucide-react"; // Íconos del menú hamburguesa
+import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import styles from "./navbar.module.css";
 
@@ -20,26 +21,29 @@ export default function Navbar() {
               <span className="block text-text">
                 HU<span className="text-primary">MM</span>ER BOX
               </span>
-              <span className="block text-text text-sm">
-                ANDRATX
-              </span>
+              <span className="block text-text text-sm">ANDRATX</span>
             </div>
           </div>
 
           {/* MENÚ PRINCIPAL */}
           <div className="hidden lg:flex space-x-6">
-            <Link href="/" className={styles.navLink}>
-              BOX
-            </Link>
-            <Link href="/" className={styles.navLink}>
-              ENTRENAMIENTOS
-            </Link>
-            <Link href="/Horarios" className={styles.navLink}>
-              SOBRE NOSOTROS
-            </Link>
-            <Link href="/unete" className={styles.navLink}>
-              ÚNETE
-            </Link>
+            {[
+              { path: "/", label: "BOX" },
+              { path: "/entrenamientos", label: "ENTRENAMIENTOS" },
+              { path: "/Horarios", label: "SOBRE NOSOTROS" },
+              { path: "/unete", label: "ÚNETE" }
+            ].map(({ path, label }, i) => (
+              <motion.div
+                key={i}
+                whileHover={{ x: 5 }} // 🔥 Se mueve ligeramente a la derecha
+                whileTap={{ x: -5 }} // 🔥 Se mueve a la izquierda al hacer clic
+                transition={{ duration: 0.2 }}
+              >
+                <Link href={path} className={styles.navLink}>
+                  {label}
+                </Link>
+              </motion.div>
+            ))}
           </div>
 
           {/* LOGO SUPERPUESTO SOBRE LA LÍNEA */}
@@ -63,26 +67,34 @@ export default function Navbar() {
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
 
-          {/* MENÚ MÓVIL */}
-          {isOpen && (
-            <div className="absolute top-full left-0 w-full bg-black shadow-md flex flex-col items-center py-4 space-y-4">
-              <Link href="/" className={styles.navLink} onClick={() => setIsOpen(false)}>
-                BOX
-              </Link>
-              <Link href="/" className={styles.navLink} onClick={() => setIsOpen(false)}>
-                ENTRENAMIENTOS
-              </Link>
-              <Link href="/Horarios" className={styles.navLink} onClick={() => setIsOpen(false)}>
-                SOBRE NOSOTROS
-              </Link>
-              <Link href="/unete" className={styles.navLink} onClick={() => setIsOpen(false)}>
-                ÚNETE
-              </Link>
-            </div>
-          )}
+          {/* MENÚ MÓVIL CON TRANSICIÓN */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: isOpen ? 1 : 0, x: isOpen ? 0 : -20 }}
+            transition={{ duration: 0.3 }}
+            className={`absolute top-full left-0 w-full bg-black shadow-md flex flex-col items-center py-4 space-y-4 ${
+              isOpen ? "block" : "hidden"
+            }`}
+          >
+            {[
+              { path: "/", label: "BOX" },
+              { path: "/entrenamientos", label: "ENTRENAMIENTOS" },
+              { path: "/Horarios", label: "SOBRE NOSOTROS" },
+              { path: "/unete", label: "ÚNETE" }
+            ].map(({ path, label }, i) => (
+              <motion.div
+                key={i}
+                whileHover={{ x: 5 }}
+                whileTap={{ x: -5 }}
+                transition={{ duration: 0.2 }}
+              >
+                <Link href={path} className={styles.navLink} onClick={() => setIsOpen(false)}>
+                  {label}
+                </Link>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
-        {/* LÍNEA AZUL DEGRADADA */}
-        {/* <div className="absolute top-[58px] w-full h-[20px] bg-gradient-to-b from-blue-400 via-blue-100 to-transparent opacity-70 z-[40]"></div> */}
       </nav>
     </>
   );
