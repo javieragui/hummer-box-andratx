@@ -35,8 +35,8 @@ export default function Navbar() {
             ].map(({ path, label }, i) => (
               <motion.div
                 key={i}
-                whileHover={{ x: 5 }} // 🔥 Se mueve ligeramente a la derecha
-                whileTap={{ x: -5 }} // 🔥 Se mueve a la izquierda al hacer clic
+                whileHover={{ x: 5 }}
+                whileTap={{ x: -5 }}
                 transition={{ duration: 0.2 }}
               >
                 <Link href={path} className={styles.navLink}>

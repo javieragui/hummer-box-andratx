@@ -39,6 +39,16 @@ export default function HomePage() {
       <div className="flex flex-col items-center justify-center mt-8 mb-8">
         <CarouselBox />
       </div>
+
+      {/* Último apartado texto */}
+      <div className="text-left items-left m-20">
+        <h1 className="relative text-xl sm:text-2xl md:text-3xl font-bold after:block after:w-12 after:h-[3px] after:bg-blue-500 after:mt-2 after:rounded-full">
+          Filosofía de nuestro centro de entrenamiento funcional
+        </h1><br/>
+        <p>En nuestro centro de Cross Training en Mallorca, ofrecemos un sistema de ejercicio del que estamos orgullosos. Nuestra filosofía en la práctica del Cross Training es enseñar los ejercicios, de la mejor manera que sabemos y que el alumno los integre, de tal manera que él mismo sea capaz de corregirse, entonces se entrenará de manera segura y productiva. Ya que nuestro objetivo es que la técnica no falle, podemos enseñar nuestros métodos a todo tipo de personas con cualquier condición física y edad y cuya única diferencia entre ellos resida en la intensidad en los ejercicios (pesos, alturas, distancias, etc). En nuestro box Cross Training , trabajamos con adultos, jóvenes, gente mayor, deportistas, competidores y en general con cualquiera que quiera introducir una mejora en su vida, adaptándonos al nivel de cada uno. Para ello en las primeras sesiones en el gimnasio de Cross Training , nos centramos en mostrarle al alumno la técnica necesaria para que pueda realizar los ejercicios de acuerdo a su nivel, evitando así riesgos de lesiones.</p>
+        <br/>
+        <p>Nuestro objetivo es encauzarle y acompañarle siempre en su camino para conseguir una buena forma física que pueda utilizar en la práctica de cualquier otro deporte haciendo que se sienta a gusto con su entrenamiento personal en el Cross Training box durante todo el proceso, mediante ejercicios variados, entrenamientos amenos y un buen trato personalizado.</p>
+      </div>
     </div>
   );
 }
