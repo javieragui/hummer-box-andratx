@@ -26,12 +26,13 @@ export function CarouselBox() {
 
   return (
     <Carousel
-      plugins={[plugin.current]}
-      loop={true}
-      className="w-full max-w-7xl"
-      onMouseEnter={plugin.current.stop}
-      onMouseLeave={plugin.current.reset}
-    >
+  plugins={[plugin.current]}
+  options={{ loop: true }} 
+  className="w-full max-w-7xl"
+  onMouseEnter={plugin.current.stop}
+  onMouseLeave={plugin.current.reset}
+>
+
       <CarouselContent>
         {imagesCarousel.map((item, index) => (
           <CarouselItem key={index}>
