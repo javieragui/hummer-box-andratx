@@ -41,7 +41,7 @@ export default function HomePage() {
       </div>
 
       {/* Último apartado texto */}
-      <div className="text-left items-left m-20">
+      <div className="text-left items-left m-4 md:m-20">
         <h1 className="relative text-xl sm:text-2xl md:text-3xl font-bold after:block after:w-12 after:h-[3px] after:bg-blue-500 after:mt-2 after:rounded-full">
           Filosofía de nuestro centro de entrenamiento funcional
         </h1><br/>

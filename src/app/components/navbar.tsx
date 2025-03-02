@@ -29,8 +29,9 @@ export default function Navbar() {
           <div className="hidden lg:flex space-x-6">
             {[
               { path: "/", label: "BOX" },
+              { path: "/horarios", label: "HORARIOS" },
+              { path: "/precios", label: "PRECIOS" },
               { path: "/entrenamientos", label: "ENTRENAMIENTOS" },
-              { path: "/Horarios", label: "SOBRE NOSOTROS" },
               { path: "/unete", label: "ÚNETE" }
             ].map(({ path, label }, i) => (
               <motion.div
@@ -47,7 +48,7 @@ export default function Navbar() {
           </div>
 
           {/* LOGO SUPERPUESTO SOBRE LA LÍNEA */}
-          <Link href="/" className="absolute left-36 top-1 z-[60]">
+          <Link href="/" className="absolute left-40 top-1 z-[60]">
             <div className="relative h-[80px] w-[80px] lg:h-[110px] lg:w-[110px]">
               <Image
                 src="imgs/Logo.jpg"

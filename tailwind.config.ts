@@ -18,7 +18,9 @@ export default {
         gray: "#B0B0B0",
       },
       fontFamily: {
-        miFuente: ["primary-font", "sans-serif"],
+        sans: ['var(--font-montserrat)', 'sans-serif'], // Montserrat como fuente predeterminada
+        raleway: ['var(--font-raleway)', 'sans-serif'], // Raleway como fuente predeterminada
+        poppins: ['var(--font-poppins)', 'sans-serif'], // Poppins opcional
       },
     },
   },

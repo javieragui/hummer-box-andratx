@@ -16,8 +16,8 @@ import {
 
 const imagesCarousel = [
   { src: "imgs/carousel1.jpg", titulo: "Cross Training", text: "<p>El <strong>Cross Training</strong> es un entrenamiento de alta intensidad que mejora fuerza, resistencia, coordinación y flexibilidad mediante movimientos naturales y ejercicios multiarticulares.</p></br><p>En <strong>Hummer Box Andratx</strong>, te ayudamos a alcanzar tu mejor versión con entrenamientos de halterofilia, gimnasia, remo indoor y carrera, adaptados a cualquier nivel. Contamos con <strong>instalaciones de primera calidad y un ambiente motivador</strong>.</p></br><p>💪 <strong>¿Listo para el reto?</strong></p>" },
-  { src: "imgs/carousel2.jpg", titulo: "Titulo 2", text: "Texto para imagen 2" },
-  { src: "imgs/carousel3.jpg", titulo: "Titulo 3", text: "Texto para imagen 3" },
+  { src: "imgs/carousel2.jpg", titulo: "Técnica", text: "Texto para imagen 2" },
+  { src: "imgs/carousel3.jpg", titulo: "Material", text: "Texto para imagen 3" },
 ];
 
 export function CarouselBox() {
@@ -55,7 +55,7 @@ export function CarouselBox() {
 
               {/* Texto (Arriba en móviles, izquierda en pantallas grandes) */}
               <div className="w-full sm:w-1/2 flex items-center justify-center bg-blue-50 h-auto sm:h-[500px] rounded-t-lg sm:rounded-l-lg">
-                <Card className="shadow-none border-none p-6 w-full h-full flex flex-col items-center justify-center">
+                <Card className="shadow-none border-none w-full h-full flex flex-col items-center justify-center">
                   <CardContent className="border-none shadow-none text-left w-full">
                     <h2 className="text-2xl font-semibold">{item.titulo}</h2><br/>
                     <div dangerouslySetInnerHTML={{ __html: item.text }} />

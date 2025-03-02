@@ -1,9 +1,9 @@
 import Image from "next/image";
+import { Phone, Mail, Instagram, Facebook } from "lucide-react"; // Importamos iconos
 
 export default function UnetePage() {
   return (
     <div className="text-center mt-20">
-      
       {/* Imagen principal con botón */}
       <div className="relative w-full aspect-[2.5/1] min-h-[300px] sm:min-h-[400px] md:min-h-[500px] mx-auto">
         <Image
@@ -12,7 +12,6 @@ export default function UnetePage() {
           fill
           className="border-[0.5px] border-black-500 shadow-lg bg-white object-cover"
         />
-        {/* Capa oscura encima de la imagen */}
         <div className="absolute inset-0 bg-black/40"></div>
 
         {/* Cuadro de fondo para el texto */}
@@ -31,35 +30,49 @@ export default function UnetePage() {
         </button>
       </div>
 
-      {/* Sección "Donde Encontrarnos" */}
-      <div className="mt-12 px-6 lg:px-20">
+      {/* Sección "Dónde Encontrarnos" */}
+      <div className="mt-12 mb-10 px-4 sm:px-8 md:px-20">
         <h1 className="text-3xl font-bold text-center mb-6">Dónde Encontrarnos</h1>
 
-        {/* Contenedor con texto a la izquierda y mapa a la derecha */}
-        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8">
-          
-          {/* Texto a la izquierda */}
-          <div className="lg:w-1/2 text-left text-lg leading-relaxed pt-4">
-            <p>
-              <span className="font-bold underline">Dirección:</span> 
-            </p>
+        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 bg-blue-50 h-auto rounded-lg p-6 shadow-md">
+          {/* Información de contacto */}
+          <div className="lg:w-1/2 text-left text-lg leading-relaxed">
+            <h2 className="font-bold underline text-xl mb-2">Dirección</h2>
             <p className="ml-6">Calle Travessia sa Tanqueta 17, 07150, Andratx, Islas Baleares</p>
-            <h5><span className="font-bold underline pt-2">Contacto</span></h5>
-            <ul className="list-disc list-inside space-y-2 text-left pt-2">
-              <li><span className="font-bold ">Teléfonos:</span> 666 80 02 63 / 673 16 43 36</li>
-              <li><span className="font-bold ">Correo Electrónico:</span> info@hummerbox.es</li>
-              <li><span className="font-bold ">Instagram:</span> hummerandratx</li>
-              <li><span className="font-bold ">Facebook:</span> hummerandratx</li>
+
+            <h2 className="font-bold underline text-xl mt-4">Contacto</h2>
+            <ul className="space-y-3 pt-2">
+              <li className="flex items-center gap-3 border-b pb-2">
+                <Phone className="text-blue-500" size={20} />
+                <span className="font-bold">Teléfonos:</span> 666 80 02 63 <br/> 673 16 43 36
+              </li>
+              <li className="flex items-center gap-3 border-b pb-2">
+                <Mail className="text-blue-500" size={20} />
+                <span className="font-bold">Correo:</span> info@hummerbox.es
+              </li>
+              <li className="flex items-center gap-3 border-b pb-2">
+                <Instagram className="text-blue-500" size={20} />
+                <span className="font-bold">Instagram:</span> hummerandratx
+              </li>
+              <li className="flex items-center gap-3 border-b pb-2">
+                <Facebook className="text-blue-500" size={20} />
+                <span className="font-bold">Facebook:</span> hummerandratx
+              </li>
             </ul>
-            <h5><span className="font-bold underline pt-2">Horarios</span></h5>
-            <ul className="list-disc list-inside space-y-2 text-left pt-2">
-              <li><span className="font-bold ">Lunes a Viernes:</span> De 6:45 a 20:30</li>
-              <li><span className="font-bold ">Sábados:</span> De 9:30 a 11:30</li>
+
+            <h2 className="font-bold underline text-xl mt-4">Horarios</h2>
+            <ul className="space-y-3 pt-2">
+              <li className="flex items-center gap-3 border-b pb-2">
+                <span className="font-bold">Lunes a Viernes:</span> 6:45 - 20:30
+              </li>
+              <li className="flex items-center gap-3 border-b pb-2">
+                <span className="font-bold">Sábados:</span> 9:30 - 11:30
+              </li>
             </ul>
           </div>
 
-          {/* Cuadro de Google Maps a la derecha */}
-          <div className="lg:w-1/2 flex justify-center mb-2">
+          {/* Google Maps */}
+          <div className="lg:w-1/2 flex justify-center">
             <div className="relative w-full h-64 md:h-80 lg:h-96">
               <iframe
                 title="Ubicación de Hummer Box Andratx"
