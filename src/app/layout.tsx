@@ -1,22 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Montserrat, Inter, Raleway, Poppins,  } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/app/components/navbar";
 import Footer from "@/app/components/footer";
 
 // Configurar la fuente Poppins
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-poppins',
-});
+// const poppins = Poppins({
+//   subsets: ['latin'],
+//   weight: ['400', '700'],
+//   variable: '--font-poppins',
+// });
 
-// Configurar la fuente Raleway
-const raleway = Raleway({
-  subsets: ['latin'],
-  weight: ['400', '700'], // Puedes añadir más pesos según lo necesites
-  variable: '--font-raleway',
-});
+// // Configurar la fuente Raleway
+// const raleway = Raleway({
+//   subsets: ['latin'],
+//   weight: ['400', '700'], // Puedes añadir más pesos según lo necesites
+//   variable: '--font-raleway',
+// });
 
 // Configurar Montserrat
 const montserrat = Montserrat({
@@ -26,11 +26,11 @@ const montserrat = Montserrat({
 });
 
 // Agregar Inter
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
+// const inter = Inter({
+//   variable: "--font-inter",
+//   subsets: ["latin"],
+//   weight: ["400", "700"],
+// });
 
 export const metadata: Metadata = {
   title: "Hummer Box - Entrenamiento funcional & Fitness",
@@ -49,7 +49,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${raleway.variable} ${poppins.variable}`}>
+    <html lang="en" className={`${montserrat.variable}`}>
       <body className="antialiased flex flex-col min-h-screen">
         <NavBar />
         {children}

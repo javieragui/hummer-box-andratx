@@ -19,8 +19,8 @@ export default {
       },
       fontFamily: {
         sans: ['var(--font-montserrat)', 'sans-serif'], // Montserrat como fuente predeterminada
-        raleway: ['var(--font-raleway)', 'sans-serif'], // Raleway como fuente predeterminada
-        poppins: ['var(--font-poppins)', 'sans-serif'], // Poppins opcional
+        // raleway: ['var(--font-raleway)', 'sans-serif'], // Raleway como fuente predeterminada
+        // poppins: ['var(--font-poppins)', 'sans-serif'], // Poppins opcional
       },
     },
   },
