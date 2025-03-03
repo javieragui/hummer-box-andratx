@@ -79,6 +79,7 @@ export default function Navbar() {
           >
             {[
               { path: "/", label: "BOX" },
+              { path: "/precios", label: "PRECIOS" },
               { path: "/entrenamientos", label: "ENTRENAMIENTOS" },
               { path: "/Horarios", label: "SOBRE NOSOTROS" },
               { path: "/unete", label: "ÚNETE" }
