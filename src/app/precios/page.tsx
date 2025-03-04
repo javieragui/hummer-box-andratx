@@ -1,5 +1,5 @@
-import { BellRing, Check } from "lucide-react";
-import { Button } from "@/components/ui/button";
+// import { BellRing, Check } from "lucide-react";
+// import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -58,7 +58,7 @@ export default function PreciosPage() {
 
       <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-4 gap-3">
         {cards.map((card, index) => (
-          <Card key={index} className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
+          <Card key={index} className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl transition-transform duration-300 hover:scale-105 focus-within:scale-105 shadow-md hover:shadow-xl focus-within:shadow-xl">
             <CardHeader>
               <div className="flex items-center space-x-2">
                 <CardTitle>{card.title}</CardTitle>
@@ -66,6 +66,7 @@ export default function PreciosPage() {
               </div>
             </CardHeader>
             <CardContent className="grid gap-4">
+              <h1 className="after:block after:w-12 after:h-[3px] after:bg-sky-500 after:mb-2 after:rounded-full"></h1>
               {/* <div className="flex items-center space-x-4 rounded-md border p-4">
                 <BellRing size={20} />
                 <div className="flex-1 space-y-1">
