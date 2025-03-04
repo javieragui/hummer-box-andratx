@@ -8,42 +8,41 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Switch } from "@/components/ui/switch";
+// import { Switch } from "@/components/ui/switch";
 
-// 📌 Definimos un array con la información de cada card
 const cards = [
   {
-    title: "Notifications",
-    description: "You have 3 unread messages.",
-    notifications: [
-      { title: "Your call has been confirmed.", description: "1 hour ago" },
-      { title: "You have a new message!", description: "1 hour ago" },
-      { title: "Your subscription is expiring soon!", description: "2 hours ago" },
+    title: "109 €",
+    description: "/mes",
+    characteristics: [
+      { title: "Acceso ilimitado a las clases", description: "1 hora por clase" },
+      { title: "Acceso limitado al open box", description: "" },
+      // { title: "Your subscription is expiring soon!", description: "2 hours ago" },
     ],
   },
   {
-    title: "Offers",
-    description: "Check out the latest promotions.",
-    notifications: [
-      { title: "50% off on premium plan!", description: "Just now" },
-      { title: "New deals available!", description: "2 hours ago" },
+    title: "99 €",
+    description: "/mes",
+    characteristics: [
+      { title: "Acceso a 4 clases a la semana", description: "1 hora por clase" },
+      { title: "Acceso a 2 open box al mes", description: "" }
     ],
   },
   {
-    title: "Reminders",
-    description: "Upcoming events and tasks.",
-    notifications: [
-      { title: "Meeting with client", description: "Tomorrow at 10 AM" },
-      { title: "Project deadline approaching", description: "3 days left" },
+    title: "85 €",
+    description: "/mes",
+    characteristics: [
+      { title: "Acceso a 3 clases a la semana", description: "1 hora por clase" },
+      { title: "Acceso a 2 open box al mes", description: "" }
     ],
   },
   {
-    title: "Updates",
-    description: "Latest changes to your account.",
-    notifications: [
-      { title: "Profile updated successfully", description: "5 minutes ago" },
-      { title: "Security settings changed", description: "30 minutes ago" },
-    ],
+    title: "75 €",
+    description: "/mes",
+    characteristics: [
+      { title: "Acceso a 2 clases a la semana", description: "1 hora por clase" },
+      { title: "Acceso a 2 open box al mes", description: "" }
+    ]
   },
 ];
 
@@ -61,20 +60,22 @@ export default function PreciosPage() {
         {cards.map((card, index) => (
           <Card key={index} className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
             <CardHeader>
-              <CardTitle>{card.title}</CardTitle>
-              <CardDescription>{card.description}</CardDescription>
+              <div className="flex items-center space-x-2">
+                <CardTitle>{card.title}</CardTitle>
+                <CardDescription>{card.description}</CardDescription>
+              </div>
             </CardHeader>
             <CardContent className="grid gap-4">
-              <div className="flex items-center space-x-4 rounded-md border p-4">
+              {/* <div className="flex items-center space-x-4 rounded-md border p-4">
                 <BellRing size={20} />
                 <div className="flex-1 space-y-1">
                   <p className="text-sm font-medium leading-none">Push Notifications</p>
                   <p className="text-sm text-muted-foreground">Send notifications to device.</p>
                 </div>
                 <Switch />
-              </div>
+              </div> */}
               <div>
-                {card.notifications.map((notification, idx) => (
+                {card.characteristics.map((notification, idx) => (
                   <div
                     key={idx}
                     className="mb-4 grid grid-cols-[25px_1fr] items-start pb-4 last:mb-0 last:pb-0"
@@ -89,9 +90,9 @@ export default function PreciosPage() {
               </div>
             </CardContent>
             <CardFooter>
-              <Button className="w-full">
+              {/* <Button className="w-full">
                 <Check size={16} className="mr-2" /> Mark all as read
-              </Button>
+              </Button> */}
             </CardFooter>
           </Card>
         ))}
