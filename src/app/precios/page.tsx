@@ -50,12 +50,14 @@ export default function PreciosPage() {
   return (
     <div className="flex flex-col items-center justify-start w-full px-2 sm:px-4 md:px-10 lg:px-20 sm:pt-20 mb-6">
 
-        {/* Este div se muestra solo en móviles */}
-        <div className="block sm:hidden relative w-full h-[120px]"></div>
+      {/* Este div se muestra solo en móviles */}
+      <div className="block sm:hidden relative w-full h-[120px]"></div>
 
-        {/* Este div se muestra solo en tablets y pantallas más grandes */}
-        <div className="hidden sm:block relative w-full h-[60px]"></div>
-
+      {/* Este div se muestra solo en tablets y pantallas más grandes */}
+      <div className="hidden sm:block relative w-full h-[60px]"></div>
+      <h2 className="text-3xl font-bold text-center mb-6 w-3/4 py-2 shadow-md bg-gradient-to-r from-sky-500 to-sky-700 text-white rounded-lg">
+        Precios
+      </h2>
       <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-4 gap-3">
         {cards.map((card, index) => (
           <Card key={index} className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl transition-transform duration-300 hover:scale-105 focus-within:scale-105 shadow-md hover:shadow-xl focus-within:shadow-xl">

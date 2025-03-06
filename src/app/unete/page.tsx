@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Phone, Mail, Instagram, Facebook } from "lucide-react"; // Importamos iconos
+import { Phone, Mail, Instagram, Facebook, Calendar, Map} from "lucide-react";
 
 export default function UnetePage() {
   return (
@@ -38,8 +38,12 @@ export default function UnetePage() {
           {/* Información de contacto */}
           <div className="lg:w-1/2 text-left text-lg leading-relaxed">
             <h2 className="font-bold underline text-xl mb-2">Dirección</h2>
-            <p className="ml-6">Calle Travessia sa Tanqueta 17, 07150, Andratx, Islas Baleares</p>
-
+            <ul className="space-y-3 pt-2">
+              <li className="flex items-center gap-3 border-b pb-2">
+                <Map className="text-blue-500" size={20} />
+                <span>Calle Travessia sa Tanqueta 17, 07150, Andratx, Islas Baleares</span>
+              </li>
+            </ul>
             <h2 className="font-bold underline text-xl mt-4">Contacto</h2>
             <ul className="space-y-3 pt-2">
               <li className="flex items-center gap-3 border-b pb-2">
@@ -63,9 +67,11 @@ export default function UnetePage() {
             <h2 className="font-bold underline text-xl mt-4">Horarios</h2>
             <ul className="space-y-3 pt-2">
               <li className="flex items-center gap-3 border-b pb-2">
+                <Calendar className="text-blue-500" size={20} />
                 <span className="font-bold">Lunes a Viernes:</span> 6:45 - 20:30
               </li>
               <li className="flex items-center gap-3 border-b pb-2">
+                <Calendar className="text-blue-500" size={20} />
                 <span className="font-bold">Sábados:</span> 9:30 - 11:30
               </li>
             </ul>
