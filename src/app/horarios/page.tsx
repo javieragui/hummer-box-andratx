@@ -14,31 +14,31 @@ export default function ScheduleTable() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col items-center bg-gray-100 px-2 sm:px-4 md:px-10 lg:px-20 sm:pt-20 mb-6">
-       {/* Este div se muestra solo en móviles */}
-       <div className="block sm:hidden relative w-full h-[120px]"></div>
+    <div className="min-h-screen flex flex-col items-center bg-gray-100 px-4 sm:px-4 md:px-10 lg:px-20 sm:pt-20 mb-6 w-full sm:w-auto">
+      {/* Este div se muestra solo en móviles */}
+      <div className="block sm:hidden relative w-full h-[120px]"></div>
 
-      {/* Este div se muestra solo en tablets y pantallas más grandes */}
-      <div className="hidden sm:block relative w-full h-[60px]"></div>
-      <h2 className="text-3xl font-bold text-center mb-6 w-3/4 py-2 shadow-md bg-gradient-to-r from-sky-500 to-sky-700 text-white rounded-lg">
+{/* Este div se muestra solo en tablets y pantallas más grandes */}
+<div className="hidden sm:block relative w-full h-[60px]"></div>
+      <h2 className="text-3xl font-bold text-center mb-6 w-full sm:w-3/4 py-2 shadow-md bg-gradient-to-r from-sky-500 to-sky-700 text-white rounded-lg">
         Horario de Clases
       </h2>
-      <div className="overflow-x-auto px-4 w-3/4">
+      <div className="overflow-x-auto w-full sm:w-3/4">
         <table className="table-auto border-collapse w-full text-center bg-white shadow-lg rounded-lg overflow-hidden">
           <thead className="bg-sky-500 text-white">
             <tr>
-              <th className="px-4 py-2">Horario</th>
+              <th className="px-2 sm:px-4 py-2">Horario</th>
               {days.map((day) => (
-                <th key={day} className="px-4 py-2 capitalize">{day}</th>
+                <th key={day} className="px-2 sm:px-4 py-2 capitalize">{day}</th>
               ))}
             </tr>
           </thead>
           <tbody>
             {schedule.map((row, index) => (
               <tr key={index} className="odd:bg-gray-200 even:bg-white border-b">
-                <td className="px-4 py-2 font-bold text-blue-700 align-middle">{row.time}</td>
+                <td className="px-2 sm:px-4 py-2 font-bold text-blue-700 align-middle">{row.time}</td>
                 {days.map((day, i) => (
-                  <td key={i} className="px-4 py-2 font-bold whitespace-pre-line">
+                  <td key={i} className="px-2 sm:px-4 py-2 font-bold whitespace-pre-line">
                     {(row.clases[day] || "").split('\n').map((classItem, idx) => (
                       <span
                         key={idx}
