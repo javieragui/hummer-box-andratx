@@ -1,5 +1,5 @@
 export default function ScheduleTable() {
-  const days = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"];
+  const days: Array<keyof typeof schedule[0]["clases"]> = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"];
 
   const schedule = [
     { time: "6:45", clases: { lunes: "WOD", martes: "WOD", miercoles: "WOD", jueves: "WOD", viernes: "WOD", sabado: "", domingo: "" } },
@@ -39,7 +39,7 @@ export default function ScheduleTable() {
                 <td className="px-4 py-2 font-bold text-blue-700 align-middle">{row.time}</td>
                 {days.map((day, i) => (
                   <td key={i} className="px-4 py-2 font-bold whitespace-pre-line">
-                    {row.clases[day].split('\n').map((classItem, idx) => (
+                    {(row.clases[day] || "").split('\n').map((classItem, idx) => (
                       <span
                         key={idx}
                         className={
