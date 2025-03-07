@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Phone, Mail, Instagram, Facebook, Calendar, Map} from "lucide-react";
+import { Phone, Mail, Instagram, Facebook, Calendar, Map, MapIcon} from "lucide-react";
 
 export default function UnetePage() {
   return (
@@ -40,7 +40,7 @@ export default function UnetePage() {
             <h2 className="font-bold underline text-xl mb-2">Dirección</h2>
             <ul className="space-y-3 pt-2">
               <li className="flex items-center gap-3 border-b pb-2">
-                <Map className="text-blue-500" size={20} />
+                <Map className="text-blue-500" size={35} />
                 <span>Calle Travessia sa Tanqueta 17, 07150, Andratx, Islas Baleares</span>
               </li>
             </ul>
