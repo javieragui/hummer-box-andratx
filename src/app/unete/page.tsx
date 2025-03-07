@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Phone, Mail, Instagram, Facebook, Calendar, Map, MapIcon} from "lucide-react";
+import { Phone, Mail, Instagram, Facebook, Calendar, Map} from "lucide-react";
 
 export default function UnetePage() {
   return (
