@@ -54,7 +54,7 @@ export function CarouselBox() {
               </div>
 
               {/* Texto (Arriba en móviles, izquierda en pantallas grandes) */}
-              <div className="w-full sm:w-1/2 flex items-center justify-center bg-blue-50 h-auto sm:h-[500px] rounded-t-lg sm:rounded-l-lg">
+              <div className="w-full sm:w-1/2 flex items-center justify-center bg-blue-100 h-auto sm:h-[500px] rounded-t-lg sm:rounded-l-lg">
                 <Card className="shadow-none border-none w-full h-full flex flex-col items-center justify-center">
                   <CardContent className="border-none shadow-none text-left w-full">
                     <h2 className="text-2xl font-semibold">{item.titulo}</h2><br/>

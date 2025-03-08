@@ -2,20 +2,20 @@ import Image from "next/image";
 
 export default function EntrenamientosPage() {
   return (
-    <div className="flex flex-col items-center bg-gray-100 sm:mx-6 md:mx-12 lg:mx-24 sm:pt-20 mb-20 w-full sm:w-auto">
+    <div className="flex flex-col items-center bg-gray-100 sm:mx-6 md:mx-6 lg:mx-24 sm:pt-20 mb-15 w-full sm:w-auto">
 
       {/* Espaciado inicial en móviles y tablets */}
       <div className="block sm:hidden relative w-full h-[120px]"></div>
       <div className="hidden sm:block relative w-full h-[60px]"></div>
 
       {/* Título principal */}
-      <h2 className="text-4xl font-bold text-center mb-12 w-full sm:w-3/4 py-3 shadow-lg bg-gradient-to-r from-sky-500 to-sky-700 text-white rounded-xl">
+      <h2 className="text-4xl font-bold text-center mb-4 w-full sm:w-3/4 py-3 shadow-lg bg-gradient-to-r from-sky-500 to-sky-700 text-white rounded-xl">
         Entrenamientos
       </h2>
 
       {/* Sección: TABATA */}
-      <div className="flex flex-col sm:flex-row items-center sm:items-start w-full mb-12">
-        <div className="w-full sm:w-1/2 flex justify-center px-4 sm:px-0">
+      <div className="flex flex-col sm:flex-row items-center sm:items-start w-full mb-12 bg-white p-8 rounded-xl shadow-md">
+        <div className="w-full sm:w-1/2 flex justify-center sm:px-0">
           <Image 
             src="imgs/carousel1.jpg" 
             alt="Tabata img" 
@@ -24,7 +24,7 @@ export default function EntrenamientosPage() {
             className="h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-cover rounded-xl shadow-lg"
           />
         </div>
-        <div className="w-full sm:w-1/2 px-6 space-y-4">
+        <div className="w-full sm:w-1/2 space-y-4">
         <br/>
           <h1 className="text-3xl font-extrabold tracking-tight lg:text-4xl">
             TABATA ⚡🔥
@@ -40,8 +40,8 @@ export default function EntrenamientosPage() {
       </div>
 
       {/* Sección: AMRAP */}
-      <div className="flex flex-col sm:flex-row-reverse items-center sm:items-start w-full mb-12">
-        <div className="w-full sm:w-1/2 flex justify-center px-4 sm:px-0">
+      <div className="flex flex-col sm:flex-row-reverse items-center sm:items-start w-full mb-12 bg-blue-100 p-8 rounded-xl shadow-md">
+        <div className="w-full sm:w-1/2 flex justify-center sm:px-0">
           <Image 
             src="imgs/carousel1.jpg" 
             alt="AMRAP img" 
@@ -50,7 +50,7 @@ export default function EntrenamientosPage() {
             className="h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-cover rounded-xl shadow-lg"
           />
         </div>
-        <div className="w-full sm:w-1/2 px-6 space-y-4">
+        <div className="w-full sm:w-1/2 space-y-4">
         <br/>
           <h1 className="text-3xl font-extrabold tracking-tight lg:text-4xl">
             AMRAP ⏳🔥
@@ -67,8 +67,8 @@ export default function EntrenamientosPage() {
       </div>
 
       {/* Sección: EMOM */}
-      <div className="flex flex-col sm:flex-row items-center sm:items-start w-full mb-12">
-        <div className="w-full sm:w-1/2 flex justify-center px-4 sm:px-0">
+      <div className="flex flex-col sm:flex-row items-center sm:items-start w-full mb-12 bg-white p-8 rounded-xl shadow-md">
+        <div className="w-full sm:w-1/2 flex justify-center sm:px-0">
           <Image 
             src="imgs/carousel1.jpg" 
             alt="EMOM img" 
@@ -77,7 +77,7 @@ export default function EntrenamientosPage() {
             className="h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-cover rounded-xl shadow-lg"
           />
         </div>
-        <div className="w-full sm:w-1/2 px-6 space-y-4">
+        <div className="w-full sm:w-1/2 space-y-4">
         <br/>
           <h1 className="text-3xl font-extrabold tracking-tight lg:text-4xl">
             EMOM ⏳🔥
@@ -93,8 +93,8 @@ export default function EntrenamientosPage() {
       </div>
 
       {/* Sección: MURPH */}
-      <div className="flex flex-col sm:flex-row-reverse items-center sm:items-start w-full mb-12">
-        <div className="w-full sm:w-1/2 flex justify-center px-4 sm:px-0">
+      <div className="flex flex-col sm:flex-row-reverse items-center sm:items-start w-full mb-12 bg-blue-100 p-8 rounded-xl shadow-md">
+        <div className="w-full sm:w-1/2 flex justify-center sm:px-0">
           <Image 
             src="imgs/carousel1.jpg" 
             alt="Murph img" 
@@ -103,7 +103,7 @@ export default function EntrenamientosPage() {
             className="h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-cover rounded-xl shadow-lg"
           />
         </div>
-        <div className="w-full sm:w-1/2 px-6 space-y-4">
+        <div className="w-full sm:w-1/2 space-y-4">
         <br/>
           <h1 className="text-3xl font-extrabold tracking-tight lg:text-4xl">
             MURPH 💥
@@ -122,8 +122,8 @@ export default function EntrenamientosPage() {
       </div>
 
       {/* Sección: HALTEROFILIA */}
-      <div className="flex flex-col sm:flex-row items-center sm:items-start w-full mb-12">
-        <div className="w-full sm:w-1/2 flex justify-center px-4 sm:px-0">
+      <div className="flex flex-col sm:flex-row items-center sm:items-start w-full mb-12 bg-white p-8 rounded-xl shadow-md">
+        <div className="w-full sm:w-1/2 flex justify-center sm:px-0">
           <Image 
             src="imgs/carousel1.jpg" 
             alt="EMOM img" 
@@ -132,7 +132,7 @@ export default function EntrenamientosPage() {
             className="h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-cover rounded-xl shadow-lg"
           />
         </div>
-        <div className="w-full sm:w-1/2 px-6 space-y-4">
+        <div className="w-full sm:w-1/2 space-y-4">
         <br />
           <h1 className="text-3xl font-extrabold tracking-tight lg:text-4xl">
             HALTEROFILIA 🏋️‍♂️🔥
@@ -155,8 +155,8 @@ export default function EntrenamientosPage() {
         
       </div>
       {/* Sección: RUN TRAIL */}
-      <div className="flex flex-col sm:flex-row-reverse items-center sm:items-start w-full mb-12">
-        <div className="w-full sm:w-1/2 flex justify-center px-4 sm:px-0">
+      <div className="flex flex-col sm:flex-row-reverse items-center sm:items-start w-full mb-12 bg-blue-100 p-8 rounded-xl shadow-md">
+        <div className="w-full sm:w-1/2 flex justify-center sm:px-0">
           <Image 
             src="imgs/carousel1.jpg" 
             alt="Run Trail img" 
@@ -165,7 +165,7 @@ export default function EntrenamientosPage() {
             className="h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-cover rounded-xl shadow-lg"
           />
         </div>
-        <div className="w-full sm:w-1/2 px-6 space-y-4">
+        <div className="w-full sm:w-1/2 space-y-4">
         <br />
           <h1 className="text-3xl font-extrabold tracking-tight lg:text-4xl">
             RUN TRAIL 🏃🌄🔥
