@@ -19,7 +19,7 @@ export default function Navbar() {
           <div className="flex items-center space-x-4">
             <div className="block text-left font-bold text-lg">
               <span className="block text-text">
-                HU<span className="text-primary">MM</span>ER BOX
+                HU<span className="text-primary">MM</span>ER
               </span>
               <span className="block text-text text-sm">ANDRATX</span>
             </div>
@@ -48,7 +48,7 @@ export default function Navbar() {
           </div>
 
           {/* LOGO SUPERPUESTO SOBRE LA LÍNEA */}
-          <Link href="/" className="absolute left-40 top-1 z-[60]">
+          <Link href="/" className="absolute left-28 top-1 z-[60]">
             <div className="relative h-[80px] w-[80px] lg:h-[110px] lg:w-[110px]">
               <Image
                 src="imgs/Logo.jpg"

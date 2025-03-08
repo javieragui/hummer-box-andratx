@@ -14,7 +14,7 @@ export default function ScheduleTable() {
   ];
 
   return (
-    <div className="flex flex-col items-center bg-gray-100 px-4 sm:px-4 md:px-10 lg:px-20 sm:pt-20 mb-20 w-full sm:w-auto ">
+    <div className="flex flex-col items-center bg-gray-100 px-4 sm:px-4 md:px-10 lg:px-20 sm:pt-20 mb-20 w-full sm:w-auto">
       {/* Este div se muestra solo en móviles */}
       <div className="block sm:hidden relative w-full h-[120px]"></div>
 

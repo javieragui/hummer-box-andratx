@@ -2,100 +2,156 @@ import Image from "next/image";
 
 export default function EntrenamientosPage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src={`next.svg`}
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="flex flex-col items-center bg-gray-100 sm:mx-6 md:mx-12 lg:mx-24 sm:pt-20 mb-20 w-full sm:w-auto">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src={`vercel.svg`}
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Espaciado inicial en móviles y tablets */}
+      <div className="block sm:hidden relative w-full h-[120px]"></div>
+      <div className="hidden sm:block relative w-full h-[60px]"></div>
+
+      {/* Título principal */}
+      <h2 className="text-4xl font-bold text-center mb-12 w-full sm:w-3/4 py-3 shadow-lg bg-gradient-to-r from-sky-500 to-sky-700 text-white rounded-xl">
+        Entrenamientos
+      </h2>
+
+      {/* Sección: TABATA */}
+      <div className="flex flex-col sm:flex-row items-center sm:items-start w-full mb-12">
+        <div className="w-full sm:w-1/2 flex justify-center px-4 sm:px-0">
+          <Image 
+            src="imgs/carousel1.jpg" 
+            alt="Tabata img" 
+            width={800} 
+            height={450}
+            className="h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-cover rounded-xl shadow-lg"
+          />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+        <div className="w-full sm:w-1/2 px-6 space-y-4">
+        <br/>
+          <h1 className="text-3xl font-extrabold tracking-tight lg:text-4xl">
+            TABATA ⚡🔥
+          </h1>
+          <p>Si creías que ya habías terminado el WOD… ¡sorpresa! <strong>Tabata</strong> es el famoso “after party” del entrenamiento...</p>
+          <p>⏳ <strong>¿Cómo funciona?</strong> 4 minutos, 8 rondas, pura intensidad:</p>
+          <ul className="list-disc pl-5">
+            <li>🔥 20 segundos a fuego máximo</li>
+            <li>🛑 10 segundos de descanso</li>
+          </ul>
+          <p>Suena fácil, ¿verdad? <strong>Error</strong>. Aquí no hay espacio para la pereza, ¡así que deja todo en cada ronda! 🚀💥</p>
+        </div>
+      </div>
+
+      {/* Sección: AMRAP */}
+      <div className="flex flex-col sm:flex-row-reverse items-center sm:items-start w-full mb-12">
+        <div className="w-full sm:w-1/2 flex justify-center px-4 sm:px-0">
+          <Image 
+            src="imgs/carousel1.jpg" 
+            alt="AMRAP img" 
+            width={800} 
+            height={450}
+            className="h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-cover rounded-xl shadow-lg"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+        </div>
+        <div className="w-full sm:w-1/2 px-6 space-y-4">
+        <br/>
+          <h1 className="text-3xl font-extrabold tracking-tight lg:text-4xl">
+            AMRAP ⏳🔥
+          </h1>
+          <p><strong>AMRAP</strong> significa <strong>&quot;As Many Reps/Rounds As Possible&quot;</strong>. El objetivo es simple: hacer el máximo número de rondas o repeticiones en un tiempo determinado.</p>
+          <p>💡 <strong>Ejemplo:</strong> Un <strong>AMRAP de 12 minutos</strong> con:</p>
+          <ul className="list-disc pl-5">
+            <li>🏋️ 10 dominadas</li>
+            <li>💪 10 flexiones</li>
+            <li>🏃 10 sentadillas</li>
+          </ul>
+          <p>¿Preparado para desafiarte? ¡Dale fuerte y sin parar! 🚀🔥</p>
+        </div>
+      </div>
+
+      {/* Sección: EMOM */}
+      <div className="flex flex-col sm:flex-row items-center sm:items-start w-full mb-12">
+        <div className="w-full sm:w-1/2 flex justify-center px-4 sm:px-0">
+          <Image 
+            src="imgs/carousel1.jpg" 
+            alt="EMOM img" 
+            width={800} 
+            height={450}
+            className="h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-cover rounded-xl shadow-lg"
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+        </div>
+        <div className="w-full sm:w-1/2 px-6 space-y-4">
+        <br/>
+          <h1 className="text-3xl font-extrabold tracking-tight lg:text-4xl">
+            EMOM ⏳🔥
+          </h1>
+          <p><strong>EMOM</strong> significa <strong>&quot;Every Minute On the Minute&quot;</strong>. Tienes un minuto para completar una serie de ejercicios y usar el tiempo restante para descansar… hasta que empiece el siguiente minuto. 🚀</p>
+          <p>💡 <strong>Ejemplo:</strong> En cada minuto, haces:</p>
+          <ul className="list-disc pl-5">
+            <li>🏋️ 2 cargadas con barra (40 kg)</li>
+            <li>🦵 2 saltos al cajón</li>
+          </ul>
+          <p>Al principio, tendrás tiempo de descanso, pero conforme avanzan los minutos, el trabajo se acumula y el descanso se reduce. ¡Aguanta hasta el final! 💪🔥</p>
+        </div>
+      </div>
+
+      {/* Sección: MURPH */}
+      <div className="flex flex-col sm:flex-row-reverse items-center sm:items-start w-full mb-12">
+        <div className="w-full sm:w-1/2 flex justify-center px-4 sm:px-0">
+          <Image 
+            src="imgs/carousel1.jpg" 
+            alt="Murph img" 
+            width={800} 
+            height={450}
+            className="h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-cover rounded-xl shadow-lg"
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        </div>
+        <div className="w-full sm:w-1/2 px-6 space-y-4">
+        <br/>
+          <h1 className="text-3xl font-extrabold tracking-tight lg:text-4xl">
+            MURPH 💥
+          </h1>
+          <p>El WOD Murph es un brutal homenaje al teniente de la marina Michael Murphy. Su entrenamiento favorito, <strong>&quot;Body Armor&quot;</strong>, se convirtió en uno de los <strong>Hero WODs</strong> más temidos de CrossFit.</p>
+          <p>💪 <strong>¿En qué consiste? Prepárate:</strong></p>
+          <ul className="list-disc pl-5">
+            <li>🏃‍♂️ 1 milla (1.600 m) de carrera </li>
+            <li>🔥 100 dominadas</li>
+            <li>🔥 200 flexiones </li>
+            <li>🔥 300 sentadillas al aire </li>
+            <li>🏃‍♂️ Otra milla (1.600 m) de carrera </li>
+          </ul>
+          <p>Como si no fuera suficiente, <strong>la versión RX se hace con un chaleco lastrado de 9 kg</strong>. ¿Te atreves? 🚀🔥</p>
+        </div>
+      </div>
+      {/* Sección: HALTEROFILIA */}
+      <div className="flex flex-col sm:flex-row-reverse items-center sm:items-start w-full mb-12">
+        <div className="w-full sm:w-1/2 px-6 space-y-4">
+        <br />
+          <h1 className="text-3xl font-extrabold tracking-tight lg:text-4xl">
+            HALTEROFILIA 🏋️‍♂️🔥
+          </h1>
+          <p>
+            La halterofilia no es solo levantar peso, es una disciplina de fuerza, velocidad y técnica. En CrossFit, los levantamientos olímpicos 
+            como el <strong>&quot;Snatch&quot;</strong> y el <strong>&quot;Clean & Jerk&quot;</strong> son fundamentales para mejorar tu rendimiento y explosividad.
+          </p>
+          <p>💪 <strong>¿En qué consiste? Prepárate:</strong></p>
+          <ul className="list-disc pl-5">
+            <li>🏋️‍♂️ <strong>Snatch (Arrancada)</strong>: Levantar la barra del suelo hasta sobre la cabeza en un solo movimiento.</li>
+            <li>🔥 <strong>Clean & Jerk (Dos tiempos)</strong>: Subir la barra a los hombros y luego impulsarla por encima de la cabeza.</li>
+            <li>💥 <strong>Front Squat</strong>: Fortalece piernas y core, clave para el clean.</li>
+            <li>⚡ <strong>Deadlift</strong>: Construye fuerza en toda la cadena posterior.</li>
+          </ul>
+          <p>
+            La halterofilia no solo mejora tu fuerza, sino también tu coordinación, movilidad y control corporal. ¿Listo para dominar la barra y superar tus límites? 🚀🔥
+          </p>
+        </div>
+        <div className="w-full sm:w-1/2 flex justify-center px-4 sm:px-0">
+          <Image 
+            src="imgs/carousel1.jpg" 
+            alt="Halterofilia img" 
+            width={800} 
+            height={450}
+            className="h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-cover rounded-xl shadow-lg"
+          />
+        </div>
+      </div>
     </div>
   );
 }
