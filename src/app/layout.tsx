@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/app/components/navbar";
 import Footer from "@/app/components/footer";
+import { Analytics } from "@vercel/analytics/react";
 
 // Configurar la fuente Poppins
 // const poppins = Poppins({
@@ -54,6 +55,7 @@ export default function RootLayout({
         <NavBar />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
