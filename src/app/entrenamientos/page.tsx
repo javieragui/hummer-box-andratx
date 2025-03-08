@@ -120,15 +120,25 @@ export default function EntrenamientosPage() {
           <p>Como si no fuera suficiente, <strong>la versión RX se hace con un chaleco lastrado de 9 kg</strong>. ¿Te atreves? 🚀🔥</p>
         </div>
       </div>
+
       {/* Sección: HALTEROFILIA */}
-      <div className="flex flex-col sm:flex-row-reverse items-center sm:items-start w-full mb-12">
+      <div className="flex flex-col sm:flex-row items-center sm:items-start w-full mb-12">
+        <div className="w-full sm:w-1/2 flex justify-center px-4 sm:px-0">
+          <Image 
+            src="imgs/carousel1.jpg" 
+            alt="EMOM img" 
+            width={800} 
+            height={450}
+            className="h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-cover rounded-xl shadow-lg"
+          />
+        </div>
         <div className="w-full sm:w-1/2 px-6 space-y-4">
         <br />
           <h1 className="text-3xl font-extrabold tracking-tight lg:text-4xl">
             HALTEROFILIA 🏋️‍♂️🔥
           </h1>
           <p>
-            La halterofilia no es solo levantar peso, es una disciplina de fuerza, velocidad y técnica. En CrossFit, los levantamientos olímpicos 
+            La halterofilia no es solo levantar peso, es una disciplina de fuerza, velocidad y técnica. Los levantamientos olímpicos 
             como el <strong>&quot;Snatch&quot;</strong> y el <strong>&quot;Clean & Jerk&quot;</strong> son fundamentales para mejorar tu rendimiento y explosividad.
           </p>
           <p>💪 <strong>¿En qué consiste? Prepárate:</strong></p>
@@ -142,15 +152,41 @@ export default function EntrenamientosPage() {
             La halterofilia no solo mejora tu fuerza, sino también tu coordinación, movilidad y control corporal. ¿Listo para dominar la barra y superar tus límites? 🚀🔥
           </p>
         </div>
+        
+      </div>
+      {/* Sección: RUN TRAIL */}
+      <div className="flex flex-col sm:flex-row-reverse items-center sm:items-start w-full mb-12">
         <div className="w-full sm:w-1/2 flex justify-center px-4 sm:px-0">
           <Image 
             src="imgs/carousel1.jpg" 
-            alt="Halterofilia img" 
+            alt="Run Trail img" 
             width={800} 
             height={450}
             className="h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-cover rounded-xl shadow-lg"
           />
         </div>
+        <div className="w-full sm:w-1/2 px-6 space-y-4">
+        <br />
+          <h1 className="text-3xl font-extrabold tracking-tight lg:text-4xl">
+            RUN TRAIL 🏃🌄🔥
+          </h1>
+          <p>
+            Correr en la montaña no es solo un ejercicio, es una aventura. **El trail running** combina resistencia, fuerza y estrategia mientras te enfrentas 
+            a terrenos irregulares, desniveles extremos y paisajes espectaculares. Aquí no solo corres, **te adaptas, superas y conquistas cada ruta.**
+          </p>
+          <p>💪 <strong>¿Qué lo hace único? Prepárate:</strong></p>
+          <ul className="list-disc pl-5">
+            <li>🏔️ <strong>Terrenos desafiantes</strong>: Senderos de tierra, rocas, barro y subidas exigentes.</li>
+            <li>⚡ <strong>Resistencia y fuerza</strong>: No solo se trata de correr rápido, sino de **aguantar y adaptarte** a cada tramo.</li>
+            <li>🔥 <strong>Subidas y bajadas</strong>: Control, técnica y potencia en cada cambio de desnivel.</li>
+            <li>🎯 <strong>Estrategia y mente</strong>: Dosifica tu energía, elige bien el calzado y prepárate para cualquier clima.</li>
+          </ul>
+          <p>
+            Si buscas un reto que combine naturaleza y rendimiento físico, **el trail running es para ti.** Cada kilómetro es un desafío, cada cumbre un logro. 
+            ¿Listo para conquistar la montaña? 🚀🔥
+          </p>
+        </div>
+
       </div>
     </div>
   );
