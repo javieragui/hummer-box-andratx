@@ -1,16 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, Phone, MapPin, Facebook, Instagram } from "lucide-react"; // Íconos
+import { Mail, Phone, MapPin, Facebook, Instagram } from "lucide-react";
 
 export default function FooterPage() {
   return (
-    <footer className="bg-primary text-white py-8 mt-auto mt-4">
+    <footer className="bg-primary text-white py-8 mt-4">
       <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center md:items-start space-y-6 md:space-y-0">
         
         {/* LOGO */}
         <div className="flex flex-col items-center md:items-start">
           <Image
-            src="imgs/Logo.jpg"
+            src="/imgs/Logo.jpg"
             alt="Hummer Box Mallorca"
             width={200}
             height={150}

@@ -6,11 +6,11 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   // output: 'export',
   images: {
-    unoptimized: true, // Evita problemas con imágenes en modo estático
+    unoptimized: false, // Evita problemas con imágenes en modo estático
+    formats: ['image/webp'],
   },
-  // basePath: "/", // Se usa SOLO en producción
-  // assetPrefix: "/"
-  
+  basePath: "",
+  assetPrefix: ""
 };
 
 export default nextConfig;
