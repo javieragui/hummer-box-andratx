@@ -1,7 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import { Phone, Mail, Instagram, Facebook, Calendar, Map} from "lucide-react";
+import { useMediaQuery } from "react-responsive";
 
 export default function UnetePage() {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
   return (
     <div className="text-center mt-20">
       {/* Imagen principal con botón */}
@@ -40,7 +45,7 @@ export default function UnetePage() {
             <h2 className="font-bold underline text-xl mb-2">Dirección</h2>
             <ul className="space-y-3 pt-2">
               <li className="flex items-center gap-3 border-b pb-2">
-                <Map className="text-blue-500" size={35} />
+                <Map className="text-blue-500" size={isMobile ? 40 : 20} />
                 <span>Calle Travessia sa Tanqueta 17, 07150, Andratx, Islas Baleares</span>
               </li>
             </ul>

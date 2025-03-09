@@ -4,7 +4,6 @@ import * as React from "react";
 import { useState, useEffect, useRef } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
-
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -16,8 +15,14 @@ import {
 
 const imagesCarousel = [
   { src: "imgs/carousel1.jpg", titulo: "Cross Training", text: "<p>El <strong>Cross Training</strong> es un entrenamiento de alta intensidad que mejora fuerza, resistencia, coordinación y flexibilidad mediante movimientos naturales y ejercicios multiarticulares.</p></br><p>En <strong>Hummer Box Andratx</strong>, te ayudamos a alcanzar tu mejor versión con entrenamientos de halterofilia, gimnasia, remo indoor y carrera, adaptados a cualquier nivel. Contamos con <strong>instalaciones de primera calidad y un ambiente motivador</strong>.</p></br><p>💪 <strong>¿Listo para el reto?</strong></p>" },
-  { src: "imgs/carousel2.jpg", titulo: "Técnica", text: "Texto para imagen 2" },
-  { src: "imgs/carousel3.jpg", titulo: "Material", text: "Texto para imagen 3" },
+  { src: "imgs/carousel2.jpg", titulo: "Técnica y Perfección 🎯",
+    text: `<p>No se trata solo de levantar más peso o hacer más repeticiones. La <strong>técnica</strong> es la clave para mejorar sin lesiones y alcanzar tu máximo rendimiento.</p></br>
+    <p>En <strong>Hummer Andratx</strong>, nos enfocamos en la ejecución correcta de cada movimiento, desde los <strong>levantamientos olímpicos</strong> hasta la <strong>gimnasia deportiva</strong>. Con la guía de nuestros coaches, mejorarás tu precisión y eficiencia en cada ejercicio.</p></br>
+    <p>🔍 <strong>La clave del progreso está en los detalles. Entrena con inteligencia, no solo con intensidad.</strong></p>`
+  },
+  { src: "imgs/carousel3.jpg", titulo: "Material del Box 🏋️‍♂️", text: `<p>En <strong>Hummer Andratx</strong>, contamos con <strong>equipamiento de primera calidad</strong> para que saques el máximo provecho a cada entrenamiento.</p></br>
+    <p>Desde <strong>pesas olímpicas</strong> y <strong>kettlebells</strong>, hasta <strong>anillas, cuerdas, assault bikes, remos indoor y SkiErgs</strong>. Todo lo que necesitas para mejorar tu fuerza, resistencia y técnica en un mismo lugar.</p></br>
+    <p>🔥 <strong>El material no hace al atleta… pero ayuda a que des lo mejor de ti.</strong></p>` },
 ];
 
 export function CarouselBox() {
