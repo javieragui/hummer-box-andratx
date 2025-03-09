@@ -40,7 +40,7 @@ export default function EntrenamientosPage() {
       </div>
 
       {/* Sección: HALTEROFILIA */}
-      <div className="flex flex-col sm:flex-row items-center sm:items-start w-full mb-12 bg-blue-100 p-8 rounded-xl shadow-md gap-8 sm:gap-12">
+      <div className="flex flex-col sm:flex-row-reverse items-center sm:items-start w-full mb-12 bg-blue-100 p-8 rounded-xl shadow-md gap-8 sm:gap-12">
         <div className="w-full sm:w-1/2 flex justify-center sm:px-0">
           <Image 
             src="/imgs/carousel1.jpg" 
@@ -73,7 +73,7 @@ export default function EntrenamientosPage() {
       </div>
 
       {/* Sección: AMRAP */}
-      <div className="flex flex-col sm:flex-row-reverse items-center sm:items-start w-full mb-12 bg-white p-8 rounded-xl shadow-md gap-8 sm:gap-12">
+      <div className="flex flex-col sm:flex-row items-center sm:items-start w-full mb-12 bg-white p-8 rounded-xl shadow-md gap-8 sm:gap-12">
         <div className="w-full sm:w-1/2 flex justify-center sm:px-0">
           <Image 
             src="/imgs/carousel1.jpg" 
@@ -100,7 +100,7 @@ export default function EntrenamientosPage() {
       </div>
 
       {/* Sección: EMOM */}
-      <div className="flex flex-col sm:flex-row items-center sm:items-start w-full mb-12 bg-blue-100 p-8 rounded-xl shadow-md gap-8 sm:gap-12">
+      <div className="flex flex-col sm:flex-row-reverse items-center sm:items-start w-full mb-12 bg-blue-100 p-8 rounded-xl shadow-md gap-8 sm:gap-12">
         <div className="w-full sm:w-1/2 flex justify-center sm:px-0">
           <Image 
             src="/imgs/carousel1.jpg" 
@@ -126,7 +126,7 @@ export default function EntrenamientosPage() {
       </div>
 
       {/* Sección: MURPH */}
-      <div className="flex flex-col sm:flex-row-reverse items-center sm:items-start w-full mb-12 bg-white p-8 rounded-xl shadow-md gap-8 sm:gap-12">
+      <div className="flex flex-col sm:flex-row items-center sm:items-start w-full mb-12 bg-white p-8 rounded-xl shadow-md gap-8 sm:gap-12">
         <div className="w-full sm:w-1/2 flex justify-center sm:px-0">
           <Image 
             src="/imgs/carousel1.jpg" 
