@@ -20,7 +20,7 @@ export default function FooterPage() {
 
         {/* INFORMACIÓN */}
         <div className="flex flex-col space-y-2 text-center md:text-left">
-          <h2 className="text-lg font-bold">HummerBox Mallorca</h2>
+          <h2 className="text-lg font-bold">HU<span className="text-black">MM</span>ER MALLORCA</h2>
           <p className="flex items-center gap-2">
             <MapPin size={18} /> Calle Travessia sa Tanqueta 17, 07150, <br/> Andratx, Islas Baleares
           </p>
@@ -44,16 +44,16 @@ export default function FooterPage() {
             <Mail size={18} /> info@hummerbox.es
           </p>
           <Link href="https://facebook.com/HummerBoxmallorca" target="_blank" className="flex items-center gap-2 hover:underline">
-            <Facebook size={18} /> Hummerbox Facebook
+            <Facebook size={18} /> Hummer Facebook
           </Link>
           <Link href="https://instagram.com/hummerandratx" target="_blank" className="flex items-center gap-2 hover:underline">
-            <Instagram size={18} /> Hummerbox Instagram
+            <Instagram size={18} /> Hummer Instagram
           </Link>
         </div>
       </div>
 
       <div className="text-center text-sm mt-6 border-t border-white/20 pt-4">
-        &copy; {new Date().getFullYear()} HummerBox Andratx
+        &copy; {new Date().getFullYear()} HUMMER ANDRATX
       </div>
     </footer>
   );
